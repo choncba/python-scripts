@@ -7,7 +7,7 @@ def ip_address_valid(ip_address):
         return False
 
 def dni_valid(dni):
-    if re.match(r'^[0-9]{8}', dni):
+    if re.match('[0-9]{8}$', dni):
         return True
     else:
         return False

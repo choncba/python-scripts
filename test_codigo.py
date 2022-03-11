@@ -1,3 +1,8 @@
+""" 
+Muestra como testear una funcion con el modulo doctest.
+ejecutar: python test_codigo.py -v para correr el test
+"""
+
 import re
 
 def dni_valid(dni):
@@ -12,7 +17,7 @@ def dni_valid(dni):
     False
     """
 
-    if re.match(r'^[0-9]{8}', dni):
+    if re.match('[0-9]{8}$', dni):
         return True
     else:
         return False
