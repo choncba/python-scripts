@@ -23,5 +23,8 @@ def dni_valid(dni):
         return False
 
 if __name__ == '__main__':
+    """
+    Doctest realizara las pruebas de la funcion dni_valid() definidas entre comillas
+    """
     import doctest
     doctest.testmod()        
